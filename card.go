@@ -1,8 +1,8 @@
 package card
 
 import (
-"math/rand"
-"time"
+	"math/rand"
+	"time"
 )
 
 // Card describes the card.
