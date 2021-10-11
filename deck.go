@@ -48,12 +48,14 @@ func (d *Deck) RandomDeck() {
 	}
 }
 
+// TakeTop modifies the deck and returns the card from the top
 func (d *Deck) TakeTop() (card Card) {
 	card = d.Cards[len(d.Cards)-1]
 	d.Cards = d.Cards[:len(d.Cards)-1]
 	return card
 }
 
+// TakeBottom modifies the deck and returns the card from the bottom
 func (d *Deck) TakeBottom() (card Card) {
 	card = d.Cards[0]
 	d.Cards = d.Cards[1:]
